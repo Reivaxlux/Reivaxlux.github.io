@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ATRIUM :: Ingresar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <meta charset="UTF-8">
+        <meta name="description" content="ATRIUM Universidad ECOTEC, Accede a nuestro entorno virtual educativo ATRIUM para estudiantes de la universidad ecotec" />
+        <base href="https://atrium.ecotec.edu.ec/" />
+        <meta name="keywords" content="atrium,atrium ecotec, aula virtual ecotec" />
+        <link rel="shortcut icon" href="template/images/favicon.png">
+        <meta name="author" content="Universidad ECOTEC" />
+        <!-- Styles -->
+        <link type="text/css" rel="stylesheet" href="template/plugins/materialize/css/materialize.min.css"/>
+        <link href="template/css/materialicons.css" rel="stylesheet">
+        <link href="template/plugins/material-preloader/css/materialPreloader.min.css" rel="stylesheet">        
+        <!-- Theme Styles -->
+        <link href="template/css/alpha.min.css" rel="stylesheet" type="text/css"/>
+        <link href="template/css/custom.css" rel="stylesheet" type="text/css"/>
+        <link href="template/css/normalize.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        
+    </head>
+    <body class="signin-page">
+        
+        <div class="loader-bg"></div>
+        <div class="loader">
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div><div class="gap-patch">
+                    <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div><div class="gap-patch">
+                    <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-yellow">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div><div class="gap-patch">
+                    <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div><div class="gap-patch">
+                    <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mn-content valign-wrapper">
+            <main class="mn-inner">
+                <div class="valign">
+                      <div class="row">
+                          <div class="col s12 m12 l10">
+                              <div class="card">
+                                  <div class="card-content ">
+                                      <img src="template/images/logo_ecotec.png" style="display:block;margin:auto;width:70%">
+                                        <div style="padding-top: 10px;">
+                                            <img id="imgProfile" style="width: 192px;height: 192px;" src="template/images/default.png"  class="circle lock-screen-image">                                        </div>
+                                       <div class="row">
+                                           <form action="https://atrium.ecotec.edu.ec/login/ingreso" class="col s12" name="atrium" id="atrium" method="POST" >
+                                               <div class="input-field col s12">
+                                                   <input id="username" name="login_username" type="text" autocomplete="off" value="" class="validate">
+                                                   <label for="email">Usuario</label>
+                                               </div>
+                                                                                              <div class="input-field col s12">
+                                                   <input id="clave" name="secretkey" type="password" autocomplete="off" class="validate">
+                                                   <label for="password">Contrase&ntilde;a</label>
+                                               </div>
+                                                                                                   <div id="valida"></div>
+                                                
+<input type="hidden" name="token" value="ad934bc4127842448eeb8feaf082eda1" />
+                                                                                              <div class="col s12 right-align m-t-sm">
+                                                   <button class="waves-effect waves-grey btn indigo m-b-xs">INGRESAR</button>
+                                               </div>
+                                                <div style="text-align: right">
+                                                    <a class="waves-effect waves-grey" href="https://atrium.ecotec.edu.ec/login/resetpass">¿Olvid&oacute; contrase&ntilde;a?</a>
+                                                </div>
+                                                <br>
+                                                <div style="text-align: right">
+                                                    <a class="waves-effect waves-grey" href="https://atrium.ecotec.edu.ec/login/saml">
+                                                        <div style="float: left;padding-top: 0.7em;">
+                                                        Ingresar con </div>
+                                                        <div style="float: right;">
+                                                            <img src="template/images/logom.png" style="width: 60px;padding-top: 0.7em;">
+                                                        </div>
+                                                        </a>
+                                                </div>
+                                           </form>
+                                      </div>
+                                        <div id="RecuperaClave" class="modal" style="width: 30%;">
+                                            <div style="background: #003366;padding: 10px;border-bottom: 1px solid #e5e5e5;">
+                                                <h6 style="color: #ffffff;text-align: center;">RESTABLECER CONTRASE&Ntilde;A</h6>
+                                            </div>
+                                            <div class="modal-content">
+                                                <form id="RecuperarClave" name="RecuperarClave" action="https://atrium.ecotec.edu.ec/login/RecuperarClave" method="POST">    
+                                                    <div class="row">
+                                                        <div class="row">
+                                                            <div class="input-field col s12">
+                                                                <input id="password" type="text" required="required" autocomplete="off" id="correo" name="correo">
+                                                                <label for="password">Ingrese su n&uacute;mero de C&eacute;dula:</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p style="text-align: center;">
+                                                        <button class="waves-effect waves-light btn green"><i class="material-icons left">vpn_key</i>ENVIAR</button>
+                                                    </p>
+                                                    <br>
+                                                    <div id="MsgClave"></div>
+                                                    <br>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer" style="background-color: #6B7E95;">
+                                                <a href="javascript::void(0);" style="color: #FFFFFF;" class="modal-action modal-close waves-effect waves-blue btn-flat ">CERRAR</a>
+                                            </div>
+                                        </div>
+                                  </div>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Javascripts -->
+        <script type="text/javascript" src="https://atrium.ecotec.edu.ec/template/plugins/jquery/jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="template/plugins/materialize/js/materialize.min.js"></script>
+        <script type="text/javascript" src="template/plugins/material-preloader/js/materialPreloader.min.js"></script>
+        <script type="text/javascript" src="template/plugins/jquery-blockui/jquery.blockui.js"></script>
+        <script type="text/javascript" src="template/js/alpha.min.js"></script>
+        <script type="text/javascript" src="template/js/ajaxsubmit.js"></script>
+        <script type="text/javascript" src="template/js/jscapslock.js"></script>
+        
+         <script>
+            /*document.getElementById("clave").addEventListener("keydown", function(event){
+                var caps = event.getModifierState && event.getModifierState('CapsLock');
+                console.log(caps); // true when you press the keyboard CapsLock key
+                if(caps)
+                {
+                    console.log("Aqui");
+                    document.getElementById("clave").style.Backgroundcolor = "blue";
+                }
+            });*/
+
+            $("#username").focus();
+            
+             $(document).ready(function(){
+                 $("#username").blur(function() {
+                     valor = $("#username").val().length;
+                     var array2 = new Object();
+                     array2['usuario'] = $("#username").val();
+                     $.ajax({
+                        type: "POST",
+                        data: array2,
+                        url: "login/ChkFoto",
+                        beforeSend: function () {
+                            $("#error").html("<p align='center'><img src='imagenes/ajax-loader.gif' /></p>");
+                        },
+                        success: function (data) {
+                            var res = JSON.parse(data);// $.parseJSON(data);
+                            $("#imgProfile").attr("src",res.url);
+                        },
+                        error: function (e) {
+                            $('#error').html("<center><div class='alert alert-info' role='alert'>Error en el servidor, por favor, intentalo de nuevo mas tarde</div></center>");
+                        }
+                     });
+                 });
+
+             });
+
+            $("#RecuperarClave").submit(function(e){
+                var formObj = $(this);
+                var formURL = formObj.attr("action");
+                var formData = new FormData(this);
+                $("#MsgClave").html("");
+                
+                $.ajax({
+                    url: formURL,
+                    type: "POST",
+                    data: formData,
+                    contentType: false,
+                    cache: false,
+                    processData:false,
+                    beforeSend: function(){
+                        contenido= "<div class='col s12 m12 center'><div class='preloader-wrapper big active'><div class='spinner-layer spinner-blue-only'><div class='circle-clipper left'><div class='circle'></div></div><div class='gap-patch'><div class='circle'></div></div><div class='circle-clipper right'><div class='circle'></div></div></div></div></div>";
+                        $("#MsgClave").html(contenido);
+                    },
+                    success: function(data, textStatus, jqXHR)
+                    { 
+                        if(data == "ko1"){
+                            setTimeout(function(){
+                                $("#MsgClave").html("<p class='text-center'>CORREO NO VALIDO, PORFAVOR INTENTE DE NUEVO.</p>");
+                            },500);
+                        }else if(data == "ko2"){
+                            setTimeout(function(){
+                                $("#MsgClave").html("<p class='text-center'>Usted ya reestablecio su clave porfavor revise su correo registrado.</p>");
+                            },500);
+                        }else if(data == "OK"){
+                            setTimeout(function(){
+                                $("#MsgClave").html(data);
+                            },500);
+                        }else{
+                            $("#MsgClave").html(data);
+                        }
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                        if(textStatus == 'error'){
+                            $("#Msg").html("<p class='text-center'>No se ha podido subir la Tarea</p>");
+                        }
+                    }
+                });
+                e.preventDefault(); 
+            });
+            
+
+        </script>
+        
+    </body>
+</html>
