@@ -152,7 +152,7 @@ $json = json_decode($responseData, true);
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 <head>
 	<title></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -169,7 +169,7 @@ $json = json_decode($responseData, true);
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<img src="../imagenes/logo-datafast.png">
+			<img src="../imagenes/logo-datafast.png" alt="Proceso 1">
 		</div>
 		<div class="col-md-12">
 		<h1>Portal de compras</h1>
